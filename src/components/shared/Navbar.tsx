@@ -44,7 +44,7 @@ const Navbar = () => {
   console.log(pathName);
 
   return (
-    <div className="bg-primary-bg-color">
+    <div className="bg-primary-bg-color shadow-sm">
       <Container className="py-6 flex gap-x-2 justify-between ">
         {/* logo side */}
         <div className="flex items-center gap-4">
@@ -61,7 +61,7 @@ const Navbar = () => {
               key={nav.link}
               href={nav.link}
               className={cn(
-                "text-sm text-[#5B4039] px-4 py-2",
+                "text-sm text-[#5B4039] px-4 py-2 hover:scale-105 transition-all duration-300 ease-in-out hover:font-semibold",
                 pathName === nav.link &&
                   "bg-primary-color text-white font-bold rounded-full",
               )}
