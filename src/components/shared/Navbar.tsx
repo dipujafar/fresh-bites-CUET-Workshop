@@ -7,6 +7,9 @@ import { usePathname } from "next/navigation";
 import { cn } from "cn";
 import { Badge } from "../ui/badge";
 
+
+
+
 const navLink = [
   {
     label: <span>Home</span>,
@@ -41,7 +44,7 @@ const navLink = [
 const Navbar = () => {
   const pathName = usePathname();
 
-  console.log(pathName);
+
 
   return (
     <div className="bg-primary-bg-color shadow-sm">
@@ -49,7 +52,7 @@ const Navbar = () => {
         {/* logo side */}
         <div className="flex items-center gap-4">
           <Image src={logo} alt={"logo image"} />
-          <h3 className="text-primary-color text-[22px] font-bold">
+          <h3  className="text-primary-color text-[22px] font-bold">
             FreshBites
           </h3>
         </div>
