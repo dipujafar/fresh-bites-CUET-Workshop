@@ -1,10 +1,11 @@
 import Banner from "@/components/modules/Home/banner";
-import Container from "@/components/shared/Container";
+import Categories from "@/components/modules/Home/categories";
 
 export default function Home() {
   return (
     <div>
       <Banner />
+      <Categories />
     </div>
   );
 }
